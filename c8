@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    float a;
+    scanf("%f",&a);
+    if(a<10)
+    printf("alert");
+    else if(a<=30)
+    printf("low");
+    else if(a>30 &&a<=70)
+    printf("medium");
+    else if(a>70)
+    printf("high");
+    return 0;
+}
