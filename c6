@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int i,r=10,y=3,g=7;
+    while(1)
+    {
+        for(i=r;i>=1;i--)
+        printf("RED:%d\n",i);
+        for(i=y;i>=1;i--)
+        printf("YELLOW:%d\n",i);
+        for(i=g;i>=1;i--)
+        printf("GREEN:%d\n",i);
+    }
+    return 0;
+}
