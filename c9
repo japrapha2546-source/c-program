@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+	char n[50],a;
+	int i,len;
+	printf("Enter Mobile Number: ");
+	scanf("%s", n);
+	len=strlen(n);
+	if(len!=10){
+		printf("Number must have 10 digits");
+		return 0;
+	}
+	if(n[0]=='0'){
+		printf("Number should not start with 0");
+		return 0;
+	}
+	for(i=0; i<len;i++){
+		a=n[i];
+		if(a<'0'||a>'9'){
+			printf("Invalid");
+		}
+	}
+	printf("Valid Mobile Number");
+	return 0;
+}
