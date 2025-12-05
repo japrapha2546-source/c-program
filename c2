@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+   float a,b,c,d,e,sum,discount,afterdis,gst,finalamount;
+   scanf("%f %f %f %f %f",&a,&b,&c,&d,&e);
+   if(a<0||b<0||c<0||d<0||e<0)
+     printf("invalid price");
+
+   sum=a+b+c+d+e;
+   if(sum>500)
+      discount=sum*0.05;
+   else if(sum>=1000)
+      discount=sum*0.10;
+  
+   afterdis = sum - discount;
+   if(sum>500)
+     gst=afterdis*0.05;
+   else if(sum>=1000)
+     gst=afterdis*0.05;
+    finalamount=afterdis+gst;
+    printf("Item Total:%.2f\n",sum);
+    printf("Discount Applied: %.2f\n",discount);
+    printf("Amount After Discount: %.2f\n",afterdis);
+    printf("GST : %.2f\n",gst);
+    printf("Final bill amount: %.2f\n",finalamount);
+    return 0;
+}
